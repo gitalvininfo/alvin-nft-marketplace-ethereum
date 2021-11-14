@@ -1,4 +1,4 @@
-const SimpleNFT = artifacts.require('./contracts/SimpleNFT.sol');
+const SimpleNFT = artifacts.require('./SimpleNFT.sol');
 const truffleAssert = require('truffle-assert');
 
 contract('SimpleNFT', (accounts) => {

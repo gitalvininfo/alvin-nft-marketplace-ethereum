@@ -1,27 +1,105 @@
 {
   "contractName": "SimpleNFTCustodian",
-  "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol\":\"SimpleNFTCustodian\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol\":{\"keccak256\":\"0x2cacd38a708fc780be68c3e3cac92b7e8206f6e3d50437bb3f03d82c84c5b41c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6d29611b623a325036267a70b09e4ead27d5ea03289bfb56ac654d55b24bc441\",\"dweb:/ipfs/QmZ9wUBNBWc8fQ3qvNTSYQSG2hvxuZTr8FqxdMZ8zRpa7R\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e078ae2f906bc84dcc79c19eed861225729b99c0b0d1b419c400119e478b283564736f6c63430008040033",
-  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220e078ae2f906bc84dcc79c19eed861225729b99c0b0d1b419c400119e478b283564736f6c63430008040033",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "simpleNFT",
+      "outputs": [
+        {
+          "internalType": "contract SimpleNFT",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "contract SimpleNFT",
+          "name": "instanceAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setSimpleNFTAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "nftId",
+          "type": "uint256"
+        }
+      ],
+      "name": "buyNft",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"nftId\",\"type\":\"uint256\"}],\"name\":\"buyNft\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"contract SimpleNFT\",\"name\":\"instanceAddress\",\"type\":\"address\"}],\"name\":\"setSimpleNFTAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"simpleNFT\",\"outputs\":[{\"internalType\":\"contract SimpleNFT\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol\":\"SimpleNFTCustodian\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Alvin/blockchain/simple-nft/contracts/SimpleNFT.sol\":{\"keccak256\":\"0x64f3e90cc721d3d260884410e13a104d70baf467eca677f15deacad23912d20e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://029cb4755aef8f1895967fd3611940029cc6bf3eb8eec59563b529e7fef299ba\",\"dweb:/ipfs/Qmcx9gKwxwQbeRrBGuZKCXsomuEdSCDwfGE9fXaDD1s4qk\"]},\"/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol\":{\"keccak256\":\"0x6d1e1f2b2014fd1689165e6c075c8689261fe4ac0d4384032f2d4f7ef22228a1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3922834e869839a7dad04846520f5ae011c1874c99b7d8cdba1f0ce3f171e6ef\",\"dweb:/ipfs/QmY4YhKo92UhxxW66WXyY8bcf6WEVQTcgd4cgmXnrMUVYf\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x7d2b8ba4b256bfcac347991b75242f9bc37f499c5236af50cf09d0b35943dc0c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d8eeaf6afe00229af4c232ca058bb08b7a24cc3886f0b387159ac49ffd8b5312\",\"dweb:/ipfs/QmdnVKmDDWDvdRr6vtrxy3G6WafqA2TAhUZv1UFMsm4B4r\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0xf101e8720213560fab41104d53b3cc7ba0456ef3a98455aa7f022391783144a0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3e7820bcf567e6892d937c3cb10db263a4042e446799bca602535868d822384e\",\"dweb:/ipfs/QmPG2oeDjKncqsEeyYGjAN7CwAJmMgHterXGGnpzhha4z7\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xd9517254724276e2e8de3769183c1f738f445f0095c26fd9b86d3c6687e887b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0e604bcdcd5e5b2fb299ad09769cde6db19d5aa1929d1b5e939234a0f10d7eb8\",\"dweb:/ipfs/Qmd8hXE3GZfBHuWx3RNiYgFW2ci7KvHtib8DiwzJ2dgo9V\"]},\"@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol\":{\"keccak256\":\"0x188d038a65a945481cc13fe30db334472dfbed61f7959d4478d05feb6303b1ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7aec4efa22389811ffa393463569410bbca1ecaa551bc94d69020bc9567e9277\",\"dweb:/ipfs/QmPwk5uVSHPQkepebrZSQ9xqgXdPABKqHwJZ2HkzNByLRE\"]},\"@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol\":{\"keccak256\":\"0xd32fb7f530a914b1083d10a6bed3a586f2451952fec04fe542bcc670a82f7ba5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://af63ab940a34687c45f0ad84960b048fc5f49330c92ccb422db7822a444733b9\",\"dweb:/ipfs/QmUShaQEu8HS1GjDnsMJQ8jkZEBrecn6NuDZ3pfjY1gVck\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x3336baae5cf23e94274d75336e2d412193be508504aee185e61dc7d58cd05c8a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://39a05eec7083dfa0cc7e0cbfe6cd1bd085a340af1ede93fdff3ad047c5fb3d8e\",\"dweb:/ipfs/QmVApz5fCUq2QC8gKTsNNdCmcedJ3ETHp68zR5N3WUKS4r\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x90565a39ae45c80f0468dc96c7b20d0afc3055f344c8203a0c9258239f350b9f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://26e8b38a7ac8e7b4463af00cf7fff1bf48ae9875765bf4f7751e100124d0bc8c\",\"dweb:/ipfs/QmWcsmkVr24xmmjfnBQZoemFniXjj3vwT78Cz6uqZW1Hux\"]},\"@openzeppelin/contracts/utils/Counters.sol\":{\"keccak256\":\"0x78450f4e3b722cce467b21e285f72ce5eaf361e9ba9dd2241a413926246773cd\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f103065051300cd995fd4599ba91188d4071b92175b52f26110e02db091617c0\",\"dweb:/ipfs/QmSyDz67R2HCypDE8Pacn3voVwxw9x17NM66q47YgBnGqc\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0x391d3ba97ab6856a16b225d6ee29617ad15ff00db70f3b4df1ab5ea33aa47c9d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d636ba90bbbeed04a1ea7fe9ec2466757e30fd38ba2ca173636dbf69a518735e\",\"dweb:/ipfs/QmQwCB2BHnEuYR22PYt9HkpbgeFDhq4rHmaYqAZbX3WRC7\"]},\"@openzeppelin/contracts/utils/introspection/ERC165.sol\":{\"keccak256\":\"0x5718c5df9bd67ac68a796961df938821bb5dc0cd4c6118d77e9145afb187409b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d10e1d9b26042424789246603906ad06143bf9a928f4e99de8b5e3bdc662f549\",\"dweb:/ipfs/Qmejonoaj5MLekPus229rJQHcC6E9dz2xorjHJR84fMfmn\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0xa28007762d9da9db878dd421960c8cb9a10471f47ab5c1b3309bfe48e9e79ff4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://796ab6e88af7bf0e78def0f059310c903af6a312b565344e0ff524a0f26e81c6\",\"dweb:/ipfs/QmcsVgLgzWdor3UnAztUkXKNGcysm1MPneWksF72AvnwBx\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506106a9806100206000396000f3fe6080604052600436106100345760003560e01c8063099230d414610039578063243adbdd14610062578063dc4457751461007e575b600080fd5b34801561004557600080fd5b50610060600480360381019061005b9190610462565b6100a9565b005b61007c6004803603810190610077919061048b565b6100ec565b005b34801561008a57600080fd5b506100936103c1565b6040516100a09190610550565b60405180910390f35b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663f8eb5fc5836040518263ffffffff1660e01b8152600401610148919061056b565b60206040518083038186803b15801561016057600080fd5b505afa158015610174573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061019891906104b4565b90506000349050818110156101ac57600080fd5b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16636352211e856040518263ffffffff1660e01b8152600401610208919061056b565b60206040518083038186803b15801561022057600080fd5b505afa158015610234573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102589190610439565b90508073ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f193505050501580156102a0573d6000803e3d6000fd5b5060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663d11eccd68233876040518463ffffffff1660e01b81526004016102fe93929190610519565b600060405180830381600087803b15801561031857600080fd5b505af115801561032c573d6000803e3d6000fd5b5050505060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632931a108856040518263ffffffff1660e01b8152600401610389919061056b565b600060405180830381600087803b1580156103a357600080fd5b505af11580156103b7573d6000803e3d6000fd5b5050505050505050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000815190506103f48161062e565b92915050565b60008135905061040981610645565b92915050565b60008135905061041e8161065c565b92915050565b6000815190506104338161065c565b92915050565b60006020828403121561044b57600080fd5b6000610459848285016103e5565b91505092915050565b60006020828403121561047457600080fd5b6000610482848285016103fa565b91505092915050565b60006020828403121561049d57600080fd5b60006104ab8482850161040f565b91505092915050565b6000602082840312156104c657600080fd5b60006104d484828501610424565b91505092915050565b6104e6816105d4565b82525050565b6104f581610586565b82525050565b610504816105e6565b82525050565b610513816105ca565b82525050565b600060608201905061052e60008301866104dd565b61053b60208301856104ec565b610548604083018461050a565b949350505050565b600060208201905061056560008301846104fb565b92915050565b6000602082019050610580600083018461050a565b92915050565b6000610591826105aa565b9050919050565b60006105a382610586565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60006105df8261060a565b9050919050565b60006105f1826105f8565b9050919050565b6000610603826105aa565b9050919050565b60006106158261061c565b9050919050565b6000610627826105aa565b9050919050565b61063781610586565b811461064257600080fd5b50565b61064e81610598565b811461065957600080fd5b50565b610665816105ca565b811461067057600080fd5b5056fea264697066735822122068e750c2007386e01662d600fd4f398c54dd7124af8d99886246d29209875bf264736f6c63430008040033",
+  "deployedBytecode": "0x6080604052600436106100345760003560e01c8063099230d414610039578063243adbdd14610062578063dc4457751461007e575b600080fd5b34801561004557600080fd5b50610060600480360381019061005b9190610462565b6100a9565b005b61007c6004803603810190610077919061048b565b6100ec565b005b34801561008a57600080fd5b506100936103c1565b6040516100a09190610550565b60405180910390f35b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663f8eb5fc5836040518263ffffffff1660e01b8152600401610148919061056b565b60206040518083038186803b15801561016057600080fd5b505afa158015610174573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061019891906104b4565b90506000349050818110156101ac57600080fd5b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16636352211e856040518263ffffffff1660e01b8152600401610208919061056b565b60206040518083038186803b15801561022057600080fd5b505afa158015610234573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906102589190610439565b90508073ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f193505050501580156102a0573d6000803e3d6000fd5b5060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663d11eccd68233876040518463ffffffff1660e01b81526004016102fe93929190610519565b600060405180830381600087803b15801561031857600080fd5b505af115801561032c573d6000803e3d6000fd5b5050505060008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16632931a108856040518263ffffffff1660e01b8152600401610389919061056b565b600060405180830381600087803b1580156103a357600080fd5b505af11580156103b7573d6000803e3d6000fd5b5050505050505050565b60008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000815190506103f48161062e565b92915050565b60008135905061040981610645565b92915050565b60008135905061041e8161065c565b92915050565b6000815190506104338161065c565b92915050565b60006020828403121561044b57600080fd5b6000610459848285016103e5565b91505092915050565b60006020828403121561047457600080fd5b6000610482848285016103fa565b91505092915050565b60006020828403121561049d57600080fd5b60006104ab8482850161040f565b91505092915050565b6000602082840312156104c657600080fd5b60006104d484828501610424565b91505092915050565b6104e6816105d4565b82525050565b6104f581610586565b82525050565b610504816105e6565b82525050565b610513816105ca565b82525050565b600060608201905061052e60008301866104dd565b61053b60208301856104ec565b610548604083018461050a565b949350505050565b600060208201905061056560008301846104fb565b92915050565b6000602082019050610580600083018461050a565b92915050565b6000610591826105aa565b9050919050565b60006105a382610586565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b60006105df8261060a565b9050919050565b60006105f1826105f8565b9050919050565b6000610603826105aa565b9050919050565b60006106158261061c565b9050919050565b6000610627826105aa565b9050919050565b61063781610586565b811461064257600080fd5b50565b61064e81610598565b811461065957600080fd5b50565b610665816105ca565b811461067057600080fd5b5056fea264697066735822122068e750c2007386e01662d600fd4f398c54dd7124af8d99886246d29209875bf264736f6c63430008040033",
   "immutableReferences": {},
-  "sourceMap": "59:32:2:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "59:32:2:-:0;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.4;\r\n\r\ncontract SimpleNFTCustodian {\r\n}\r\n",
+  "sourceMap": "88:612:2:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "88:612:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;160:109;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;277:420;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;125:26;;;;;;;;;;;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;160:109;246:15;234:9;;:27;;;;;;;;;;;;;;;;;;160:109;:::o;277:420::-;334:14;351:9;;;;;;;;;;;:22;;;374:5;351:29;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;334:46;;391:15;409:9;391:27;;453:9;439:10;:23;;431:32;;;;;;476:28;515:9;;;;;;;;;;;:17;;;533:5;515:24;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;476:64;;553:12;:21;;:33;575:10;553:33;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;597:9;;;;;;;;;;:21;;;619:12;633:10;645:5;597:54;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;662:9;;;;;;;;;;:20;;;683:5;662:27;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;277:420;;;;:::o;125:26::-;;;;;;;;;;;;:::o;7:143:14:-;64:5;95:6;89:13;80:22;;111:33;138:5;111:33;:::i;:::-;70:80;;;;:::o;156:173::-;219:5;257:6;244:20;235:29;;273:50;317:5;273:50;:::i;:::-;225:104;;;;:::o;335:139::-;381:5;419:6;406:20;397:29;;435:33;462:5;435:33;:::i;:::-;387:87;;;;:::o;480:143::-;537:5;568:6;562:13;553:22;;584:33;611:5;584:33;:::i;:::-;543:80;;;;:::o;629:284::-;699:6;748:2;736:9;727:7;723:23;719:32;716:2;;;764:1;761;754:12;716:2;807:1;832:64;888:7;879:6;868:9;864:22;832:64;:::i;:::-;822:74;;778:128;706:207;;;;:::o;919:296::-;995:6;1044:2;1032:9;1023:7;1019:23;1015:32;1012:2;;;1060:1;1057;1050:12;1012:2;1103:1;1128:70;1190:7;1181:6;1170:9;1166:22;1128:70;:::i;:::-;1118:80;;1074:134;1002:213;;;;:::o;1221:262::-;1280:6;1329:2;1317:9;1308:7;1304:23;1300:32;1297:2;;;1345:1;1342;1335:12;1297:2;1388:1;1413:53;1458:7;1449:6;1438:9;1434:22;1413:53;:::i;:::-;1403:63;;1359:117;1287:196;;;;:::o;1489:284::-;1559:6;1608:2;1596:9;1587:7;1583:23;1579:32;1576:2;;;1624:1;1621;1614:12;1576:2;1667:1;1692:64;1748:7;1739:6;1728:9;1724:22;1692:64;:::i;:::-;1682:74;;1638:128;1566:207;;;;:::o;1779:147::-;1874:45;1913:5;1874:45;:::i;:::-;1869:3;1862:58;1852:74;;:::o;1932:118::-;2019:24;2037:5;2019:24;:::i;:::-;2014:3;2007:37;1997:53;;:::o;2056:165::-;2160:54;2208:5;2160:54;:::i;:::-;2155:3;2148:67;2138:83;;:::o;2227:118::-;2314:24;2332:5;2314:24;:::i;:::-;2309:3;2302:37;2292:53;;:::o;2351:458::-;2508:4;2546:2;2535:9;2531:18;2523:26;;2559:79;2635:1;2624:9;2620:17;2611:6;2559:79;:::i;:::-;2648:72;2716:2;2705:9;2701:18;2692:6;2648:72;:::i;:::-;2730;2798:2;2787:9;2783:18;2774:6;2730:72;:::i;:::-;2513:296;;;;;;:::o;2815:256::-;2925:4;2963:2;2952:9;2948:18;2940:26;;2976:88;3061:1;3050:9;3046:17;3037:6;2976:88;:::i;:::-;2930:141;;;;:::o;3077:222::-;3170:4;3208:2;3197:9;3193:18;3185:26;;3221:71;3289:1;3278:9;3274:17;3265:6;3221:71;:::i;:::-;3175:124;;;;:::o;3305:96::-;3342:7;3371:24;3389:5;3371:24;:::i;:::-;3360:35;;3350:51;;;:::o;3407:113::-;3461:7;3490:24;3508:5;3490:24;:::i;:::-;3479:35;;3469:51;;;:::o;3526:126::-;3563:7;3603:42;3596:5;3592:54;3581:65;;3571:81;;;:::o;3658:77::-;3695:7;3724:5;3713:16;;3703:32;;;:::o;3741:134::-;3799:9;3832:37;3863:5;3832:37;:::i;:::-;3819:50;;3809:66;;;:::o;3881:160::-;3948:9;3981:54;4029:5;3981:54;:::i;:::-;3968:67;;3958:83;;;:::o;4047:130::-;4114:9;4147:24;4165:5;4147:24;:::i;:::-;4134:37;;4124:53;;;:::o;4183:126::-;4233:9;4266:37;4297:5;4266:37;:::i;:::-;4253:50;;4243:66;;;:::o;4315:113::-;4365:9;4398:24;4416:5;4398:24;:::i;:::-;4385:37;;4375:53;;;:::o;4434:122::-;4507:24;4525:5;4507:24;:::i;:::-;4500:5;4497:35;4487:2;;4546:1;4543;4536:12;4487:2;4477:79;:::o;4562:156::-;4652:41;4687:5;4652:41;:::i;:::-;4645:5;4642:52;4632:2;;4708:1;4705;4698:12;4632:2;4622:96;:::o;4724:122::-;4797:24;4815:5;4797:24;:::i;:::-;4790:5;4787:35;4777:2;;4836:1;4833;4826:12;4777:2;4767:79;:::o",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.4;\r\n\r\nimport \"./SimpleNFT.sol\";\r\n\r\ncontract SimpleNFTCustodian {\r\n\r\n    SimpleNFT public simpleNFT;\r\n\r\n    function setSimpleNFTAddress(SimpleNFT instanceAddress) public {\r\n        simpleNFT = instanceAddress;\r\n    }\r\n\r\n    function buyNft(uint256 nftId) public payable {\r\n        uint salePrice = simpleNFT.getSalePrice(nftId);\r\n        uint amountPaid = msg.value;\r\n\r\n        require(amountPaid >= salePrice);\r\n\r\n        address payable currentOwner = payable(simpleNFT.ownerOf(nftId));\r\n\r\n        currentOwner.transfer(amountPaid);\r\n        simpleNFT.transferNft(currentOwner, msg.sender, nftId);\r\n        simpleNFT.markAsSold(nftId);\r\n    }\r\n}\r\n",
   "sourcePath": "D:/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol",
   "ast": {
     "absolutePath": "/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol",
     "exportedSymbols": {
+      "Address": [
+        1649
+      ],
+      "Context": [
+        1671
+      ],
+      "Counters": [
+        1745
+      ],
+      "ERC165": [
+        1972
+      ],
+      "ERC721": [
+        1063
+      ],
+      "ERC721URIStorage": [
+        1325
+      ],
+      "IERC165": [
+        1984
+      ],
+      "IERC721": [
+        1179
+      ],
+      "IERC721Metadata": [
+        1352
+      ],
+      "IERC721Receiver": [
+        1197
+      ],
+      "SimpleNFT": [
+        174
+      ],
       "SimpleNFTCustodian": [
-        69
+        247
+      ],
+      "Strings": [
+        1948
       ]
     },
-    "id": 70,
+    "id": 248,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 68,
+        "id": 176,
         "literals": [
           "solidity",
           "0.8",
@@ -31,39 +109,941 @@
         "src": "33:22:2"
       },
       {
+        "absolutePath": "/D/Alvin/blockchain/simple-nft/contracts/SimpleNFT.sol",
+        "file": "./SimpleNFT.sol",
+        "id": 177,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 248,
+        "sourceUnit": 175,
+        "src": "59:25:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
         "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 69,
+        "id": 247,
         "linearizedBaseContracts": [
-          69
+          247
         ],
         "name": "SimpleNFTCustodian",
-        "nameLocation": "68:18:2",
+        "nameLocation": "97:18:2",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 70,
-        "src": "59:32:2",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "dc445775",
+            "id": 180,
+            "mutability": "mutable",
+            "name": "simpleNFT",
+            "nameLocation": "142:9:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 247,
+            "src": "125:26:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_SimpleNFT_$174",
+              "typeString": "contract SimpleNFT"
+            },
+            "typeName": {
+              "id": 179,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 178,
+                "name": "SimpleNFT",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 174,
+                "src": "125:9:2"
+              },
+              "referencedDeclaration": 174,
+              "src": "125:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                "typeString": "contract SimpleNFT"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 190,
+              "nodeType": "Block",
+              "src": "223:46:2",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 188,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 186,
+                      "name": "simpleNFT",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 180,
+                      "src": "234:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                        "typeString": "contract SimpleNFT"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 187,
+                      "name": "instanceAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 183,
+                      "src": "246:15:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                        "typeString": "contract SimpleNFT"
+                      }
+                    },
+                    "src": "234:27:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                      "typeString": "contract SimpleNFT"
+                    }
+                  },
+                  "id": 189,
+                  "nodeType": "ExpressionStatement",
+                  "src": "234:27:2"
+                }
+              ]
+            },
+            "functionSelector": "099230d4",
+            "id": 191,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setSimpleNFTAddress",
+            "nameLocation": "169:19:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 184,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 183,
+                  "mutability": "mutable",
+                  "name": "instanceAddress",
+                  "nameLocation": "199:15:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 191,
+                  "src": "189:25:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                    "typeString": "contract SimpleNFT"
+                  },
+                  "typeName": {
+                    "id": 182,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 181,
+                      "name": "SimpleNFT",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 174,
+                      "src": "189:9:2"
+                    },
+                    "referencedDeclaration": 174,
+                    "src": "189:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                      "typeString": "contract SimpleNFT"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "188:27:2"
+            },
+            "returnParameters": {
+              "id": 185,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "223:0:2"
+            },
+            "scope": 247,
+            "src": "160:109:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 245,
+              "nodeType": "Block",
+              "src": "323:374:2",
+              "statements": [
+                {
+                  "assignments": [
+                    197
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 197,
+                      "mutability": "mutable",
+                      "name": "salePrice",
+                      "nameLocation": "339:9:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 245,
+                      "src": "334:14:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 196,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "334:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 202,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 200,
+                        "name": "nftId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 193,
+                        "src": "374:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 198,
+                        "name": "simpleNFT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 180,
+                        "src": "351:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                          "typeString": "contract SimpleNFT"
+                        }
+                      },
+                      "id": 199,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getSalePrice",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 86,
+                      "src": "351:22:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256) view external returns (uint256)"
+                      }
+                    },
+                    "id": 201,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "351:29:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "334:46:2"
+                },
+                {
+                  "assignments": [
+                    204
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 204,
+                      "mutability": "mutable",
+                      "name": "amountPaid",
+                      "nameLocation": "396:10:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 245,
+                      "src": "391:15:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 203,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "391:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 207,
+                  "initialValue": {
+                    "expression": {
+                      "id": 205,
+                      "name": "msg",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4294967281,
+                      "src": "409:3:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_message",
+                        "typeString": "msg"
+                      }
+                    },
+                    "id": 206,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "value",
+                    "nodeType": "MemberAccess",
+                    "src": "409:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "391:27:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 211,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 209,
+                          "name": "amountPaid",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 204,
+                          "src": "439:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "id": 210,
+                          "name": "salePrice",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 197,
+                          "src": "453:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "439:23:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 208,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "431:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 212,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "431:32:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 213,
+                  "nodeType": "ExpressionStatement",
+                  "src": "431:32:2"
+                },
+                {
+                  "assignments": [
+                    215
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 215,
+                      "mutability": "mutable",
+                      "name": "currentOwner",
+                      "nameLocation": "492:12:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 245,
+                      "src": "476:28:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      },
+                      "typeName": {
+                        "id": 214,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "476:15:2",
+                        "stateMutability": "payable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 223,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 220,
+                            "name": "nftId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 193,
+                            "src": "533:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "id": 218,
+                            "name": "simpleNFT",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 180,
+                            "src": "515:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                              "typeString": "contract SimpleNFT"
+                            }
+                          },
+                          "id": 219,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "ownerOf",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 393,
+                          "src": "515:17:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
+                            "typeString": "function (uint256) view external returns (address)"
+                          }
+                        },
+                        "id": 221,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "515:24:2",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 217,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "507:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_payable_$",
+                        "typeString": "type(address payable)"
+                      },
+                      "typeName": {
+                        "id": 216,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "507:8:2",
+                        "stateMutability": "payable",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 222,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "507:33:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "476:64:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 227,
+                        "name": "amountPaid",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 204,
+                        "src": "575:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 224,
+                        "name": "currentOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 215,
+                        "src": "553:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 226,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "src": "553:21:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 228,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "553:33:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 229,
+                  "nodeType": "ExpressionStatement",
+                  "src": "553:33:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 233,
+                        "name": "currentOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 215,
+                        "src": "619:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 234,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4294967281,
+                          "src": "633:3:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 235,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "633:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 236,
+                        "name": "nftId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 193,
+                        "src": "645:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 230,
+                        "name": "simpleNFT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 180,
+                        "src": "597:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                          "typeString": "contract SimpleNFT"
+                        }
+                      },
+                      "id": 232,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transferNft",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 173,
+                      "src": "597:21:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256) external"
+                      }
+                    },
+                    "id": 237,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "597:54:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 238,
+                  "nodeType": "ExpressionStatement",
+                  "src": "597:54:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 242,
+                        "name": "nftId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 193,
+                        "src": "683:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 239,
+                        "name": "simpleNFT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 180,
+                        "src": "662:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                          "typeString": "contract SimpleNFT"
+                        }
+                      },
+                      "id": 241,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "markAsSold",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 105,
+                      "src": "662:20:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256) external"
+                      }
+                    },
+                    "id": 243,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "662:27:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 244,
+                  "nodeType": "ExpressionStatement",
+                  "src": "662:27:2"
+                }
+              ]
+            },
+            "functionSelector": "243adbdd",
+            "id": 246,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "buyNft",
+            "nameLocation": "286:6:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 194,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 193,
+                  "mutability": "mutable",
+                  "name": "nftId",
+                  "nameLocation": "301:5:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 246,
+                  "src": "293:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 192,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "293:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "292:15:2"
+            },
+            "returnParameters": {
+              "id": 195,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "323:0:2"
+            },
+            "scope": 247,
+            "src": "277:420:2",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 248,
+        "src": "88:612:2",
         "usedErrors": []
       }
     ],
-    "src": "33:60:2"
+    "src": "33:669:2"
   },
   "legacyAST": {
     "absolutePath": "/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol",
     "exportedSymbols": {
+      "Address": [
+        1649
+      ],
+      "Context": [
+        1671
+      ],
+      "Counters": [
+        1745
+      ],
+      "ERC165": [
+        1972
+      ],
+      "ERC721": [
+        1063
+      ],
+      "ERC721URIStorage": [
+        1325
+      ],
+      "IERC165": [
+        1984
+      ],
+      "IERC721": [
+        1179
+      ],
+      "IERC721Metadata": [
+        1352
+      ],
+      "IERC721Receiver": [
+        1197
+      ],
+      "SimpleNFT": [
+        174
+      ],
       "SimpleNFTCustodian": [
-        69
+        247
+      ],
+      "Strings": [
+        1948
       ]
     },
-    "id": 70,
+    "id": 248,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 68,
+        "id": 176,
         "literals": [
           "solidity",
           "0.8",
@@ -73,25 +1053,891 @@
         "src": "33:22:2"
       },
       {
+        "absolutePath": "/D/Alvin/blockchain/simple-nft/contracts/SimpleNFT.sol",
+        "file": "./SimpleNFT.sol",
+        "id": 177,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 248,
+        "sourceUnit": 175,
+        "src": "59:25:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
         "abstract": false,
         "baseContracts": [],
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 69,
+        "id": 247,
         "linearizedBaseContracts": [
-          69
+          247
         ],
         "name": "SimpleNFTCustodian",
-        "nameLocation": "68:18:2",
+        "nameLocation": "97:18:2",
         "nodeType": "ContractDefinition",
-        "nodes": [],
-        "scope": 70,
-        "src": "59:32:2",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "dc445775",
+            "id": 180,
+            "mutability": "mutable",
+            "name": "simpleNFT",
+            "nameLocation": "142:9:2",
+            "nodeType": "VariableDeclaration",
+            "scope": 247,
+            "src": "125:26:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_SimpleNFT_$174",
+              "typeString": "contract SimpleNFT"
+            },
+            "typeName": {
+              "id": 179,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 178,
+                "name": "SimpleNFT",
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 174,
+                "src": "125:9:2"
+              },
+              "referencedDeclaration": 174,
+              "src": "125:9:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                "typeString": "contract SimpleNFT"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 190,
+              "nodeType": "Block",
+              "src": "223:46:2",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 188,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 186,
+                      "name": "simpleNFT",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 180,
+                      "src": "234:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                        "typeString": "contract SimpleNFT"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 187,
+                      "name": "instanceAddress",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 183,
+                      "src": "246:15:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                        "typeString": "contract SimpleNFT"
+                      }
+                    },
+                    "src": "234:27:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                      "typeString": "contract SimpleNFT"
+                    }
+                  },
+                  "id": 189,
+                  "nodeType": "ExpressionStatement",
+                  "src": "234:27:2"
+                }
+              ]
+            },
+            "functionSelector": "099230d4",
+            "id": 191,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setSimpleNFTAddress",
+            "nameLocation": "169:19:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 184,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 183,
+                  "mutability": "mutable",
+                  "name": "instanceAddress",
+                  "nameLocation": "199:15:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 191,
+                  "src": "189:25:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                    "typeString": "contract SimpleNFT"
+                  },
+                  "typeName": {
+                    "id": 182,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 181,
+                      "name": "SimpleNFT",
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 174,
+                      "src": "189:9:2"
+                    },
+                    "referencedDeclaration": 174,
+                    "src": "189:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                      "typeString": "contract SimpleNFT"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "188:27:2"
+            },
+            "returnParameters": {
+              "id": 185,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "223:0:2"
+            },
+            "scope": 247,
+            "src": "160:109:2",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 245,
+              "nodeType": "Block",
+              "src": "323:374:2",
+              "statements": [
+                {
+                  "assignments": [
+                    197
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 197,
+                      "mutability": "mutable",
+                      "name": "salePrice",
+                      "nameLocation": "339:9:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 245,
+                      "src": "334:14:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 196,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "334:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 202,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 200,
+                        "name": "nftId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 193,
+                        "src": "374:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 198,
+                        "name": "simpleNFT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 180,
+                        "src": "351:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                          "typeString": "contract SimpleNFT"
+                        }
+                      },
+                      "id": 199,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getSalePrice",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 86,
+                      "src": "351:22:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_uint256_$",
+                        "typeString": "function (uint256) view external returns (uint256)"
+                      }
+                    },
+                    "id": 201,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "351:29:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "334:46:2"
+                },
+                {
+                  "assignments": [
+                    204
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 204,
+                      "mutability": "mutable",
+                      "name": "amountPaid",
+                      "nameLocation": "396:10:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 245,
+                      "src": "391:15:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "typeName": {
+                        "id": 203,
+                        "name": "uint",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "391:4:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 207,
+                  "initialValue": {
+                    "expression": {
+                      "id": 205,
+                      "name": "msg",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 4294967281,
+                      "src": "409:3:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_message",
+                        "typeString": "msg"
+                      }
+                    },
+                    "id": 206,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "value",
+                    "nodeType": "MemberAccess",
+                    "src": "409:9:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "391:27:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "id": 211,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 209,
+                          "name": "amountPaid",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 204,
+                          "src": "439:10:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": ">=",
+                        "rightExpression": {
+                          "id": 210,
+                          "name": "salePrice",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 197,
+                          "src": "453:9:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "src": "439:23:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 208,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "431:7:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 212,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "431:32:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 213,
+                  "nodeType": "ExpressionStatement",
+                  "src": "431:32:2"
+                },
+                {
+                  "assignments": [
+                    215
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 215,
+                      "mutability": "mutable",
+                      "name": "currentOwner",
+                      "nameLocation": "492:12:2",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 245,
+                      "src": "476:28:2",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      },
+                      "typeName": {
+                        "id": 214,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "476:15:2",
+                        "stateMutability": "payable",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 223,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "arguments": [
+                          {
+                            "id": 220,
+                            "name": "nftId",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 193,
+                            "src": "533:5:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          ],
+                          "expression": {
+                            "id": 218,
+                            "name": "simpleNFT",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 180,
+                            "src": "515:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                              "typeString": "contract SimpleNFT"
+                            }
+                          },
+                          "id": 219,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "ownerOf",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 393,
+                          "src": "515:17:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_external_view$_t_uint256_$returns$_t_address_$",
+                            "typeString": "function (uint256) view external returns (address)"
+                          }
+                        },
+                        "id": 221,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "functionCall",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "515:24:2",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 217,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "507:8:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_address_payable_$",
+                        "typeString": "type(address payable)"
+                      },
+                      "typeName": {
+                        "id": 216,
+                        "name": "address",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "507:8:2",
+                        "stateMutability": "payable",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 222,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "507:33:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address_payable",
+                      "typeString": "address payable"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "476:64:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 227,
+                        "name": "amountPaid",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 204,
+                        "src": "575:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 224,
+                        "name": "currentOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 215,
+                        "src": "553:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      "id": 226,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transfer",
+                      "nodeType": "MemberAccess",
+                      "src": "553:21:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256)"
+                      }
+                    },
+                    "id": 228,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "553:33:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 229,
+                  "nodeType": "ExpressionStatement",
+                  "src": "553:33:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 233,
+                        "name": "currentOwner",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 215,
+                        "src": "619:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        }
+                      },
+                      {
+                        "expression": {
+                          "id": 234,
+                          "name": "msg",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 4294967281,
+                          "src": "633:3:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_magic_message",
+                            "typeString": "msg"
+                          }
+                        },
+                        "id": 235,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "sender",
+                        "nodeType": "MemberAccess",
+                        "src": "633:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "id": 236,
+                        "name": "nftId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 193,
+                        "src": "645:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address_payable",
+                          "typeString": "address payable"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 230,
+                        "name": "simpleNFT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 180,
+                        "src": "597:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                          "typeString": "contract SimpleNFT"
+                        }
+                      },
+                      "id": 232,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "transferNft",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 173,
+                      "src": "597:21:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$__$",
+                        "typeString": "function (address,address,uint256) external"
+                      }
+                    },
+                    "id": 237,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "597:54:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 238,
+                  "nodeType": "ExpressionStatement",
+                  "src": "597:54:2"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 242,
+                        "name": "nftId",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 193,
+                        "src": "683:5:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "expression": {
+                        "id": 239,
+                        "name": "simpleNFT",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 180,
+                        "src": "662:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_SimpleNFT_$174",
+                          "typeString": "contract SimpleNFT"
+                        }
+                      },
+                      "id": 241,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "markAsSold",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 105,
+                      "src": "662:20:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256) external"
+                      }
+                    },
+                    "id": 243,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "662:27:2",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 244,
+                  "nodeType": "ExpressionStatement",
+                  "src": "662:27:2"
+                }
+              ]
+            },
+            "functionSelector": "243adbdd",
+            "id": 246,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "buyNft",
+            "nameLocation": "286:6:2",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 194,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 193,
+                  "mutability": "mutable",
+                  "name": "nftId",
+                  "nameLocation": "301:5:2",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 246,
+                  "src": "293:13:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 192,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "293:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "292:15:2"
+            },
+            "returnParameters": {
+              "id": 195,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "323:0:2"
+            },
+            "scope": 247,
+            "src": "277:420:2",
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "scope": 248,
+        "src": "88:612:2",
         "usedErrors": []
       }
     ],
-    "src": "33:60:2"
+    "src": "33:669:2"
   },
   "compiler": {
     "name": "solc",
@@ -101,12 +1947,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x36AFCb716FE5C9404627CD6Ab124f67dDb4487D3",
-      "transactionHash": "0xbf09aa4763ba58fc7539d78544eda87828e332f69adbe487f211a6610e33ba88"
+      "address": "0xB7fA620D969DB5b649dd87D43DC1E463ca7dD230",
+      "transactionHash": "0x3f3a21e01ab2e5de04adf5a9a93e0a18366d309cbafe6c60a9e6643ac1e6af77"
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2021-11-14T04:16:06.304Z",
+  "updatedAt": "2021-11-14T05:02:19.936Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
