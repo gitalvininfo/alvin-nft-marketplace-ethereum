@@ -1,0 +1,117 @@
+{
+  "contractName": "SimpleNFT",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFT.sol\":\"SimpleNFT\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFT.sol\":{\"keccak256\":\"0x6883b7c13ee01402b1cb39ed96f66b1b4d6b7f1daaf9ccc64fa661c4b9b1c071\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://421edac9adfec5d8628f334b7ef6e687c23977254a7abd5358fd3d96c68f19a9\",\"dweb:/ipfs/QmSs4eEH7zqPGi9XZQ3PToH4rudHK6qWEeR1QX3zcAdFu3\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220ea333abaa04ea20b938b4cf2c6f38a563b3a1af091c342a0600b0205df78bc2e64736f6c63430008090033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220ea333abaa04ea20b938b4cf2c6f38a563b3a1af091c342a0600b0205df78bc2e64736f6c63430008090033",
+  "immutableReferences": {},
+  "sourceMap": "60:23:1:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "60:23:1:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\ncontract SimpleNFT {\r\n}\r\n",
+  "sourcePath": "C:/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFT.sol",
+  "ast": {
+    "absolutePath": "/C/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFT.sol",
+    "exportedSymbols": {
+      "SimpleNFT": [
+        39
+      ]
+    },
+    "id": 40,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 38,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "SimpleNFT",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 39,
+        "linearizedBaseContracts": [
+          39
+        ],
+        "name": "SimpleNFT",
+        "nameLocation": "69:9:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 40,
+        "src": "60:23:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:52:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFT.sol",
+    "exportedSymbols": {
+      "SimpleNFT": [
+        39
+      ]
+    },
+    "id": 40,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 38,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "SimpleNFT",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 39,
+        "linearizedBaseContracts": [
+          39
+        ],
+        "name": "SimpleNFT",
+        "nameLocation": "69:9:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 40,
+        "src": "60:23:1",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:52:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.2.3",
+  "updatedAt": "2021-10-13T15:25:00.554Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
