@@ -1,109 +1,113 @@
 {
   "contractName": "SimpleNFTCustodian",
   "abi": [],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFTCustodian.sol\":\"SimpleNFTCustodian\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFTCustodian.sol\":{\"keccak256\":\"0x6a305ad0b68e12db9dd1ac7ffa1aa1a6cc4dba8c388e829abd0898ebf75fef22\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d2dd1a9d6a3b0a74b2293b04f7a72d1b615358fed9af919add722b8246d2d693\",\"dweb:/ipfs/QmS2DHxqfd5WpCGjbucasZaDT2Pugp7oGqUhAh8DDwhkCH\"]}},\"version\":1}",
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220f71f4998e0df1fbea6a4b67f2499bf8a5a107e6e9468c1db638278ad29f7989664736f6c63430008090033",
-  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220f71f4998e0df1fbea6a4b67f2499bf8a5a107e6e9468c1db638278ad29f7989664736f6c63430008090033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.4+commit.c7e474f2\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol\":\"SimpleNFTCustodian\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol\":{\"keccak256\":\"0x2cacd38a708fc780be68c3e3cac92b7e8206f6e3d50437bb3f03d82c84c5b41c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6d29611b623a325036267a70b09e4ead27d5ea03289bfb56ac654d55b24bc441\",\"dweb:/ipfs/QmZ9wUBNBWc8fQ3qvNTSYQSG2hvxuZTr8FqxdMZ8zRpa7R\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e078ae2f906bc84dcc79c19eed861225729b99c0b0d1b419c400119e478b283564736f6c63430008040033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220e078ae2f906bc84dcc79c19eed861225729b99c0b0d1b419c400119e478b283564736f6c63430008040033",
   "immutableReferences": {},
-  "sourceMap": "60:32:2:-:0;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "60:32:2:-:0;;;;;",
-  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.9;\r\n\r\ncontract SimpleNFTCustodian {\r\n}\r\n",
-  "sourcePath": "C:/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFTCustodian.sol",
+  "sourceMap": "59:32:2:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "59:32:2:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity 0.8.4;\r\n\r\ncontract SimpleNFTCustodian {\r\n}\r\n",
+  "sourcePath": "D:/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol",
   "ast": {
-    "absolutePath": "/C/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFTCustodian.sol",
+    "absolutePath": "/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol",
     "exportedSymbols": {
       "SimpleNFTCustodian": [
-        42
+        69
       ]
     },
-    "id": 43,
+    "id": 70,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 41,
+        "id": 68,
         "literals": [
           "solidity",
-          "^",
           "0.8",
-          ".9"
+          ".4"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:2"
+        "src": "33:22:2"
       },
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "SimpleNFTCustodian",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 42,
+        "id": 69,
         "linearizedBaseContracts": [
-          42
+          69
         ],
         "name": "SimpleNFTCustodian",
-        "nameLocation": "69:18:2",
+        "nameLocation": "68:18:2",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 43,
-        "src": "60:32:2",
+        "scope": 70,
+        "src": "59:32:2",
         "usedErrors": []
       }
     ],
-    "src": "33:61:2"
+    "src": "33:60:2"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/bguillen/Documents/sandbox/dapp-pocs/dmvp-projects/simple-nft/contracts/SimpleNFTCustodian.sol",
+    "absolutePath": "/D/Alvin/blockchain/simple-nft/contracts/SimpleNFTCustodian.sol",
     "exportedSymbols": {
       "SimpleNFTCustodian": [
-        42
+        69
       ]
     },
-    "id": 43,
+    "id": 70,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 41,
+        "id": 68,
         "literals": [
           "solidity",
-          "^",
           "0.8",
-          ".9"
+          ".4"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:23:2"
+        "src": "33:22:2"
       },
       {
         "abstract": false,
         "baseContracts": [],
-        "canonicalName": "SimpleNFTCustodian",
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 42,
+        "id": 69,
         "linearizedBaseContracts": [
-          42
+          69
         ],
         "name": "SimpleNFTCustodian",
-        "nameLocation": "69:18:2",
+        "nameLocation": "68:18:2",
         "nodeType": "ContractDefinition",
         "nodes": [],
-        "scope": 43,
-        "src": "60:32:2",
+        "scope": 70,
+        "src": "59:32:2",
         "usedErrors": []
       }
     ],
-    "src": "33:61:2"
+    "src": "33:60:2"
   },
   "compiler": {
     "name": "solc",
-    "version": "0.8.9+commit.e5eed63a.Emscripten.clang"
+    "version": "0.8.4+commit.c7e474f2.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x36AFCb716FE5C9404627CD6Ab124f67dDb4487D3",
+      "transactionHash": "0xbf09aa4763ba58fc7539d78544eda87828e332f69adbe487f211a6610e33ba88"
+    }
+  },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2021-10-13T15:25:00.555Z",
+  "updatedAt": "2021-11-14T04:16:06.304Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
